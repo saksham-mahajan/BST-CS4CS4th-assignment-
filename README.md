@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Graduate Program Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Graduate Program Website</h1>
+    </header>
+    <main>
+        <h2>About SDLC, CSS, and JavaScript</h2>
+        <p>The <a href="sdlc.html">Software Development Life Cycle (SDLC)</a> is a process for planning, creating, testing, and deploying an information system. Various methodologies like <a href="sdlc.html#agile">Agile</a> have evolved to make this process efficient and adaptable to changes.</p>
+        <p><a href="css.html">CSS (Cascading Style Sheets)</a> is a style sheet language used to describe the look and formatting of a document written in a markup language like HTML.</p>
+        <p><a href="javascript.html">JavaScript</a> is a programming language that allows you to implement complex features on web pages, such as interactive content and dynamic updates.</p>
+
+        <h2>Application Form</h2>
+        <form id="graduateForm">
+            <label for="firstName">First Name <span style="color: red;">*</span></label>
+            <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" required>
+
+            <label for="middleInitial">Middle Initial</label>
+            <input type="text" id="middleInitial" name="middleInitial" pattern="[A-Za-z]">
+
+            <label for="lastName">Last Name <span style="color: red;">*</span></label>
+            <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]+" required>
+
+            <label for="matriculation">Matriculation Number <span style="color: red;">*</span></label>
+            <input type="text" id="matriculation" name="matriculation" pattern="\d+" required>
+
+            <label for="email">E-mail <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country <span style="color: red;">*</span></label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="DE">Germany</option>
+                <option value="IN">India</option>
+                <option value="FR">France</option>
+            </select>
+
+            <label for="startDate">Start Date <span style="color: red;">*</span></label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="program">Graduate Program <span style="color: red;">*</span></label>
+            <select id="program" name="program" required>
+                <option value="">Select your program</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="mba">MBA</option>
+                <option value="eng">Engineering</option>
+                <option value="med">Medicine</option>
+            </select>
+
+            <label for="feedback">Feedback <span style="color: red;">*</span></label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>I have done this project by myself and will accept the consequences if found other ways.</p>
+        <p>Contact: <a href="mailto">100003155@stud.srh-university.de</a></p>
+    </footer>
+</body>
+</html>
